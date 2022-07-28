@@ -1,0 +1,158 @@
+SiteID,SiteNo,SiteName_KOR,SiteName_EN,Region,Prefectual_City,Period,millets,rice,acorn,walnut,hazelnut,nut_indet,rice_and_millets,wild_nuts
+K0001,1,무산 호곡동 유적,"Hogok-dong Site, Musan",North Korea, Musan,Early Mumun,1,0,0,0,0,0,1,0
+K0002,1,무산 호곡동 유적,"Hogok-dong Site, Musan",North Korea, Musan,Late Mumun,1,0,0,0,0,0,1,0
+K0003,2,봉산 마산리 유적,"Masan-ri Site, Bongsan",North Korea, Bongsan,Early Mumun,1,0,0,0,0,0,1,0
+K0004,2,봉산 마산리 유적,"Masan-ri Site, Bongsan",North Korea, Bongsan,Middle Chulmun,1,0,0,1,0,0,1,1
+K0005,3,봉산 지탑리 유적,"Jitap-ri Site, Bongsan",North Korea, Bongsan,Middle Chulmun,1,0,0,0,0,0,1,0
+K0006,4,송림 석탄리 유적,"Seoktan-ri Site, Songrim",North Korea, Songrim,Late Mumun,1,0,0,0,0,0,1,0
+K0007,5,시중 심귀리 유적,"Simgwi-ri Site, Sijung",North Korea, Sijung,Mumun,0,0,1,0,0,0,0,1
+K0008,6,연안 금곡동 유적,"Geumgok-dong Site, Yeonan",North Korea, Yeonan,Late Mumun,1,0,0,0,0,0,1,0
+K0009,7,청단 소정리 유적,"Sojeong-ri Site, Cheongdan",North Korea, Cheongdan,Late Chulmun,0,0,0,0,0,0,0,0
+K0010,8,평양 남경 유적,"Namgyeong Site, Pyeongyang",North Korea, Pyeongyang,Early Mumun,1,1,0,0,0,0,1,0
+K0011,8,평양 남경 유적,"Namgyeong Site, Pyeongyang",North Korea, Pyeongyang,Late Chulmun,1,0,1,0,0,0,1,1
+K0012,9,평양 표대 유적,"Pyodae Site, Pyeongyang",North Korea, Pyeongyang,Early Mumun,1,1,0,0,0,0,1,0
+K0013,10,회령 오동 유적,"O-dong Site, Hoeryeong",North Korea, Hoeryeong,Mumun,1,0,0,0,0,0,1,0
+K0014,11,가평 달전리 유적,"Daljeon-ri Site, Gapyeong","Seoul, Gyeonggi-do, Incheon", Gapyeong,Late Mumun,0,1,0,0,0,0,1,0
+K0015,12,가평 대성리 유적,"Daeseong-ri Site, Gapyeong","Seoul, Gyeonggi-do, Incheon", Gapyeong,Late Mumun,1,0,0,0,0,0,1,0
+K0016,13,가평 연하리 유적,"Yeonha-ri Site, Gapyeong","Seoul, Gyeonggi-do, Incheon", Gapyeong,Early Mumun,1,1,0,0,0,0,1,0
+K0017,15,김포 가현리 유적,"Gahyeon-ri Site, Gimpo","Seoul, Gyeonggi-do, Incheon", Gimpo,Late Chulmun,1,1,0,0,0,0,1,0
+K0018,16,남양주 호평동 지새울 유적,"Jisaeul Site, Hopyeong-dong, Namyangju","Seoul, Gyeonggi-do, Incheon"," Hopyeong-dong, Namyangju",Late Chulmun,0,0,1,1,0,0,0,1
+K0019,18,서울 암사동 유적,"Amsa-dong Site, Seoul","Seoul, Gyeonggi-do, Incheon", Seoul,Middle Chulmun,0,0,1,1,0,0,0,1
+K0020,19,시흥 능곡동 유적,"Neunggok-dong Site, Siheung","Seoul, Gyeonggi-do, Incheon", Siheung,Early Mumun,0,0,0,0,0,0,0,0
+K0021,19,시흥 능곡동 유적,"Neunggok-dong Site, Siheung","Seoul, Gyeonggi-do, Incheon", Siheung,Middle Chulmun,1,0,1,0,0,1,1,1
+K0022,22,여주 흔암리 유적,"Heunam-ri Site, Yeoju","Seoul, Gyeonggi-do, Incheon", Yeoju,Early Mumun,1,1,0,0,0,0,1,0
+K0023,23,인천 동양동 유적,"Dongyang-dong Site, Incheon","Seoul, Gyeonggi-do, Incheon", Incheon,Early Mumun,0,0,1,0,0,0,0,1
+K0024,24,인천 문학동 유적,"Munhak-dong Site, Incheon","Seoul, Gyeonggi-do, Incheon", Incheon,Mumun,0,0,0,0,0,0,0,0
+K0025,25,인천 용유도 남북동 유적,"Yongyudo Nambuk-dong Site, Incheon","Seoul, Gyeonggi-do, Incheon", Incheon,Late Chulmun,0,0,0,0,0,1,0,1
+K0026,26,인천 운서동 I 유적,"Unseo-dong I Site, Incheon","Seoul, Gyeonggi-do, Incheon", Incheon,Early Chulmun,0,0,1,0,0,0,0,1
+K0027,27,인천 중산동 유적,"Jungsan-dong Site, Incheon","Seoul, Gyeonggi-do, Incheon", Incheon,Late Chulmun,1,0,0,0,0,1,1,1
+K0028,28,일산 새도시 유적 1지역,"Locality 1, 새도시 Site, Ilsan","Seoul, Gyeonggi-do, Incheon"," 새도시 Site, Ilsan",Late Chulmun,0,1,0,0,0,0,1,0
+K0029,29,일산 새도시 유적 2 지역,"Locality 2, 새도시 Site, Ilsan","Seoul, Gyeonggi-do, Incheon", Incheon,Late Chulmun,0,1,0,1,0,0,1,1
+K0030,31,평택 소사동 유적,"Sosa-dong Site, Pyeongtaek","Seoul, Gyeonggi-do, Incheon", Pyeongtaek,Early Mumun,0,1,0,0,0,0,1,0
+K0031,32,평택 현화리 유적,"Hyeonhwa-ri Site, Pyeongtaek","Seoul, Gyeonggi-do, Incheon", Pyeongtaek,Mumun,0,1,0,0,0,0,1,0
+K0032,35,화성 고금산 유적,"Gogeumsan Site, Hwaseong","Seoul, Gyeonggi-do, Incheon", Hwaseong,Early Mumun,0,1,0,0,0,0,1,0
+K0033,36,화성 석교리 유적,"Seokgyo-ri Site, Hwaseong","Seoul, Gyeonggi-do, Incheon", Hwaseong,Middle Chulmun,1,0,1,0,0,0,1,1
+K0034,37,논산 마전리 유적 C 지구,"Locality C, Majeon-ri Site, Nonsan",Chungcheong-do," Majeon-ri Site, Nonsan",Mumun,1,1,1,0,0,0,1,1
+K0035,37,논산 마전리 유적 C 지구,"Locality C, Majeon-ri Site, Nonsan",Chungcheong-do," Majeon-ri Site, Nonsan",Late Mumun,0,0,1,0,0,0,0,1
+K0036,38,논산 오강리 저습지 유적,"Ogang-ri Wetland Site, Nonsan",Chungcheong-do, Nonsan,Middle Chulmun,0,0,1,0,0,1,0,1
+K0037,39,논산 원북리 유적,"Wonbuk-ri Site, Nonsan",Chungcheong-do, Nonsan,Late Mumun,0,1,0,0,0,0,1,0
+K0038,40,당진 자개리 I 유적,"Jagae-ri I Site, Dangjin",Chungcheong-do, Dangjin,Late Mumun,0,1,0,0,0,0,1,0
+K0039,41,대전 내동리 유적,"Naedong-ri Site, Daejeon",Chungcheong-do, Daejeon,Mumun,0,1,0,0,0,0,1,0
+K0040,42,대전 노은동 유적,"Noeun-dong Site, Daejeon",Chungcheong-do, Daejeon,Middle Chulmun,0,0,1,0,0,0,0,1
+K0041,43,대전 신대동 유적,"Sindae-dong Site, Daejeon",Chungcheong-do, Daejeon,Early Mumun,0,1,0,0,0,0,1,0
+K0042,48,보령 평라리 유적,"Pyeongna-ri Site, Boryeong",Chungcheong-do, Boryeong,Late Mumun,0,0,0,0,0,0,0,0
+K0043,49,부여 가중리 유적,"Gajung-ri Site, Buyeo",Chungcheong-do, Buyeo,Early Mumun,0,1,0,0,0,0,1,0
+K0044,50,부여 송국리 유적,"Songguk-ri Site, Buyeo",Chungcheong-do, Buyeo,Late Mumun,1,1,0,0,0,1,1,1
+K0045,52,서천 도삼리 유적,"Dosam-ri Site, Seocheon",Chungcheong-do, Seocheon,Late Mumun,0,1,0,0,0,1,1,1
+K0046,53,서천 월기리 유적,"Wolgi-ri Site, Seocheon",Chungcheong-do, Seocheon,Late Mumun,1,1,0,0,0,1,1,1
+K0047,54,아산 대흥리 큰선장 유적,"Keunseonjang Site, Daeheung-ri, Asan",Chungcheong-do," Daeheung-ri, Asan",Early Mumun,0,1,0,0,0,0,1,0
+K0048,55,아산 덕지리 유적,"Deokji-ri Site, Asan",Chungcheong-do, Asan,Late Mumun,1,0,0,0,0,0,1,0
+K0049,56,아산 시전리 유적,"Sijeon-ri Site, Asan",Chungcheong-do, Asan,Late Mumun,0,1,0,0,0,0,1,0
+K0050,57,아산 용두리 진터 유적,"Jinteo Site, Yongdu-ri, Asan",Chungcheong-do," Yongdu-ri, Asan",Early Mumun,0,1,0,0,0,0,1,0
+K0051,57,아산 용두리 진터 유적,"Jinteo Site, Yongdu-ri, Asan",Chungcheong-do," Yongdu-ri, Asan",Late Mumun,0,1,0,0,0,0,1,0
+K0052,58,아산 용화동 가재골 유적,"Gajaegol Site, Yonghwa-dong, Asan",Chungcheong-do," Yonghwa-dong, Asan",Early Mumun,0,1,0,0,0,0,1,0
+K0053,59,아산 장재리 안강골 유적,"Anganggol Site, Jangjae-ri, Asan",Chungcheong-do," Jangjae-ri, Asan",Early Mumun,1,0,0,0,0,1,1,1
+K0054,59,아산 장재리 안강골 유적,"Anganggol Site, Jangjae-ri, Asan",Chungcheong-do," Jangjae-ri, Asan",Middle Chulmun,1,0,0,0,0,1,1,1
+K0055,60,아산 풍기동 유적,"Punggi-dong Site, Asan",Chungcheong-do, Asan,Middle Chulmun,0,0,1,0,0,0,0,1
+K0056,62,연기 송담리 유적,"Songdam-ri Site, Yeongi",Chungcheong-do, Yeongi,Early Mumun,1,1,0,0,0,0,1,0
+K0057,63,예산 신가리 유적,"Shinga-ri Site, Yesan",Chungcheong-do, Yesan,Early Mumun,0,1,1,0,0,0,1,1
+K0058,64,옥천 대천리 유적,"Daecheon-ri Site, Okcheon",Chungcheong-do, Okcheon,Middle Chulmun,1,1,1,0,0,0,1,1
+K0059,66,천안 백석동 고재미골 유적,"Gojaemigol Site, Baekseok-dong, Cheonan",Chungcheong-do," Baekseok-dong, Cheonan",Mumun,1,1,0,0,0,0,1,0
+K0060,66,천안 백석동 고재미골 유적,"Gojaemigol Site, Baekseok-dong, Cheonan",Chungcheong-do," Baekseok-dong, Cheonan",Early Mumun,1,1,0,0,0,0,1,0
+K0061,66,천안 백석동 고재미골 유적,"Gojaemigol Site, Baekseok-dong, Cheonan",Chungcheong-do," Baekseok-clong, Cheonan",Early Mumun,1,1,0,0,0,0,1,0
+K0062,66,천안 백석동 고재미골 유적,"Gojaemigol Site, Baekseok-dong, Cheonan",Chungcheong-do," Baekseok-dong, Cheonan",Early Chulmun,1,0,0,0,0,0,1,0
+K0063,66,천안 백석동 고재미골 유적,"Gojaemigol Site, Baekseok-dong, Cheonan",Chungcheong-do," Baekseok-dong, Cheonan",Late Mumun,1,1,0,0,0,0,1,0
+K0064,67,천안 백석동 유적,"Baekseok-dong Site, Cheonan",Chungcheong-do, Cheonan,Early Mumun,0,1,0,0,0,0,1,0
+K0065,68,청원 궁평리 유적,"Gungpyeong-ri Site, Cheongwon",Chungcheong-do, Cheongwon,Late Mumun,1,1,0,0,0,0,1,0
+K0066,70,충주 조동리 유적,"Jodong-ri Site, Chungju",Chungcheong-do, Chungju,Early Mumun,1,1,1,0,1,0,1,1
+K0067,70,충주 조동리 유적,"Jodong-ri Site, Chungju",Chungcheong-do, Chungju,Late Mumun,1,1,0,0,0,0,1,0
+K0068,71,태안 고남리 유적,"Gonam-ri Site, Taean",Chungcheong-do, Taean,Late Mumun,1,1,0,0,0,0,1,0
+K0069,72,광주 동림동 유적,"Donglim-dong Site, Gwangju",Jeollabuk-do, Gwangju,Late Mumun,0,0,0,1,1,0,0,1
+K0070,74,군산 내흥동 유적,"Naeheung-dong Site, Gunsan",Jeollabuk-do, Gunsan,Middle Chulmun,0,0,1,0,0,0,0,1
+K0071,77,김제 상동동 I 유적,"Sangdong-dong I Site, Gimje",Jeollabuk-do, Gimje,Early Mumun,0,1,0,0,0,0,1,0
+K0072,83,익산 송학동 유적,"Songhak-dong Site, Iksan",Jeollabuk-do, Iksan,Mumun,0,0,0,0,0,0,0,0
+K0073,86,익산 용기리 I 유적,"Yonggi-ri I Site, Iksan",Jeollabuk-do, Iksan,Early Mumun,1,1,0,0,0,0,1,0
+K0074,87,익산 웅포리 유적,"Ungpo-ri Site, Iksan",Jeollabuk-do, Iksan,Late Chulmun,0,0,1,0,0,0,0,1
+K0075,88,진안 갈머리 유적,"Galmeo-ri Site, Jinan",Jeollabuk-do, Jinan,Middle Chulmun,0,0,1,1,0,0,0,1
+K0076,90,진안 진그늘 유적,"jingeuneul Site, Jinan",Jeollabuk-do, Jinan,Middle Chulmun,0,0,1,0,0,0,0,1
+K0077,91,강릉 교동 유적,"Gyo-dong Site, Gangneung",Gangwon-do, Gangneung,Early Mumun,0,1,0,0,0,0,1,0
+K0078,92,강릉 방동리 유적,"Bangdong-ri Site, Gangneung",Gangwon-do, Gangneung,Middle Chulmun,0,0,1,0,0,0,0,1
+K0079,93,강릉 초당동 397-3 유적,"Chodang-dong 3973 Site, Gangneung",Gangwon-do, Gangneung,Middle Chulmun,0,0,1,0,0,0,0,1
+K0080,94,강릉 초당동 391 유적,"Chodang-dong 391 Site, Gangneung",Gangwon-do, Gangneung,Middle Chulmun,0,0,1,0,0,0,0,1
+K0081,95,고성 문암리 유적,"Munam-ri Site, Goseong",Gangwon-do, Goseong,Late Chulmun,0,0,0,0,0,1,0,1
+K0082,95,고성 문암리 유적,"Munam-ri Site, Goseong",Gangwon-do, Goseong,Middle Chulmun,1,1,1,0,0,1,1,1
+K0083,96,고성 사천리 유적,"Sacheun-ri Site, Goseong",Gangwon-do, Goseong,Early Mumun,0,1,0,0,0,0,1,0
+K0084,97,양양 가평리 유적,"Gapyeong-ri Site, Yangyang",Gangwon-do, Yangyang,Middle Chulmun,0,0,1,0,0,0,0,1
+K0085,98,양양 송전리 유적,"Songjeon-ri Site, Yangyang",Gangwon-do, Yangyang,Middle Chulmun,0,0,1,0,0,0,0,1
+K0086,99,양양 오산리 유적,"Osan-ri Site, Yangyang",Gangwon-do, Yangyang,Early Chulmun,0,0,1,0,0,0,0,1
+K0087,100,양양 지경리 유적,"Jigyeong-ri Site, Yangyang",Gangwon-do, Yangyang,Middle Chulmun,0,0,1,0,0,0,0,1
+K0088,101,춘천 천전리 유적,"Cheonjeon-ri Site, Chuncheon",Gangwon-do, Chuncheon,Early Mumun,0,0,0,0,0,0,0,0
+K0089,102,거제 대금리 유적,"Daegeum-ri Site, Geoje",Gyeongsang, Geoje,Mumun,1,1,0,0,0,0,1,0
+K0090,105,경주 화전리 유적,"Hwacheon-ri Site, Gyeongju",Gyeongsang, Gyeongju,Late Mumun,1,1,0,0,0,0,1,0
+K0091,106,김전 송죽리 유적,"Songjuk-ri Site, Gimcheon",Gyeongsang, Gimcheon,Early Mumun,1,1,0,0,0,0,1,0
+K0092,106,김전 송죽리 유적,"Songjuk-ri Site, Gimcheon",Gyeongsang, Gimcheon,Middle Chulmun,1,0,1,0,0,0,1,1
+K0093,107,김천 지좌리 유적,"Jijwa-ri Site, Gimcheon",Gyeongsang, Gimcheon,Mumun,0,0,1,0,0,0,0,1
+K0094,107,김천 지좌리 유적,"Jijwa-ri Site, Gimcheon",Gyeongsang, Gimcheon,Late Mumun,1,0,1,0,0,0,1,1
+K0095,107,김천 지좌리 유적,"Jijwa-ri Site, Gimcheon",Gyeongsang, Gimcheon,Late Chulmun,1,0,1,0,0,0,1,1
+K0096,111,밀양 금천리 유적,"Geumcheon-ri Site, Miryang",Gyeongsang, Miryang,Mumun,0,0,0,1,0,0,0,1
+K0097,115,부산 동삼동 패총,"Dongsam-dong Shell Midden, Busan",Gyeongsang, Busan,Early Chulmun,0,0,0,0,0,0,0,0
+K0098,115,부산 동삼동 패총,"Dongsam-dong Shell Midden, Busan",Gyeongsang, Busan,Late Chulmun,1,0,0,0,0,0,1,0
+K0099,115,부산 동삼동 패총,"Dongsam-dong Shell Midden, Busan",Gyeongsang, Busan,Middle Chulmun,1,0,0,0,0,0,1,0
+K0100,119,안동 저전리 유적,"Jeojeon-ri Site, Andong",Gyeongsang, Andong,Mumun,0,1,1,0,0,0,1,1
+K0101,120,울산 천곡동 가재골 I 유적,"Gajaegol I Site, Cheongok-dong, Ulsan",Gyeongsang," Cheongok-dong, Ulsan",Early Mumun,0,1,0,0,0,0,1,0
+K0102,120,울산 천곡동 가재골 I 유적,"Gajaegol I Site, Cheongok-dong, Ulsan",Gyeongsang," Cheongok-dong, Ulsan",Late Mumun,1,1,0,1,0,0,1,1
+K0103,121,울산 천곡동 가재골 II 유적,"Gajaegol II Site, Cheongok-dong, Ulsan",Gyeongsang," Cheongok-dong, Ulsan",Early Mumun,1,0,0,0,0,0,1,0
+K0104,121,울산 천곡동 가재골 II 유적,"Gajaegol II Site, Cheongok-dong, Ulsan",Gyeongsang," Cheongok-dong, Ulsan",Late Mumun,1,1,0,0,0,0,1,0
+K0105,122,울산 천곡동 가재골 III 유적,"Gajaegol III Site, Cheongok-dong, Ulsan",Gyeongsang," Cheongok-dong, Ulsan",Mumun,0,0,0,0,0,0,0,0
+K0106,122,울산 천곡동 가재골 III 유적,"Gajaegol III Site, Cheongok-dong, Ulsan",Gyeongsang," Cheongok-dong, Ulsan",Early Mumun,1,1,0,0,0,0,1,0
+K0107,122,울산 천곡동 가재골 III 유적,"Gajaegol III Site, Cheongok-dong, Ulsan",Gyeongsang," Cheongok-dong, Ulsan",Late Mumun,1,1,0,0,0,0,1,0
+K0108,123,울산 천곡동 가재골 N 유적,"Gajaegol N Site, Cheongok-dong, Ulsan",Gyeongsang," Cheongok-dong, Ulsan",Early Mumun,1,0,0,0,0,0,1,0
+K0109,125,울산 교동리 456 유적,"Gyodong-ri 456 Site, Ulsan",Gyeongsang, Ulsan,Late Mumun,0,1,0,0,0,0,1,0
+K0110,126,울산 교동리 유적,"Gyodong-ri Site, Ulsan",Gyeongsang, Ulsan,Early Mumun,1,1,0,0,0,0,1,0
+K0111,126,울산 교동리 유적,"Gyodong-ri Site, Ulsan",Gyeongsang, Ulsan,Late Mumun,1,1,0,0,0,0,1,0
+K0112,127,울산 굴화리 생기들 유적,"Saenggideul Site, Gulhwa-ri, Ulsan",Gyeongsang," Gulhwa-ri, Ulsan",Early Mumun,1,0,0,0,0,0,1,0
+K0113,128,울산 굴화리 장검 II 유적,"Janggeom II Site, Gulhwa-ri, Ulsan",Gyeongsang," Gulhwa-ri, Ulsan",Early Mumun,0,0,0,0,0,0,0,0
+K0114,129,울산 궁근정리 유적,"Gunggeunjeong-ri Site, Ulsan",Gyeongsang, Ulsan,Late Chulmun,0,0,1,0,0,0,0,1
+K0115,130,울산 다운동 II 유적,"Daun-dong II Site, Ulsan",Gyeongsang, Ulsan,Late Mumun,1,1,0,0,0,0,1,0
+K0116,131,울산 다운동 436-5 유적,"Daun-dong 436-5 Site, Ulsan",Gyeongsang, Ulsan,Late Mumun,1,0,0,0,0,0,1,0
+K0117,132,울산 달천 유적,"Dalcheon Site, Ulsan",Gyeongsang, Ulsan,Early Mumun,1,1,0,0,0,0,1,0
+K0118,133,울산 덕신리 오산 유적,"Osan Site, Deoksin-ri, Ulsan",Gyeongsang," Deoksin-ri, Ulsan",Early Mumun,1,1,0,0,0,0,1,0
+K0119,134,울산 매곡동 N 지구 유적,"Locality N, Maegok-dong Site, Ulsan",Gyeongsang," Maegok-dong Site, Ulsan",Early Mumun,1,1,0,0,0,0,1,0
+K0120,135,울산 반송리 유적,"Bansong-ri Site, Ulsan",Gyeongsang, Ulsan,Late Mumun,0,0,1,0,0,0,0,1
+K0121,136,울산 반연리 가막못 유적,"Gamakmot Site, Banyeon-ri, Ulsan",Gyeongsang," Banyeon-ri, Ulsan",Late Mumun,1,0,0,0,0,0,1,0
+K0122,138,울산 상안동 유적,"Sangan-dong Site, Ulsan",Gyeongsang, Ulsan,Late Mumun,0,1,0,0,0,0,1,0
+K0123,139,울산 상연암 유적,"Sangyeonam Site, Ulsan",Gyeongsang, Ulsan,Late Mumun,1,1,0,0,0,0,1,0
+K0124,140,울산 세죽 유적,"Sejuk Site, Ulsan",Gyeongsang, Ulsan,Early Chulmun,0,0,1,0,0,0,0,1
+K0125,141,울산 신현동 황토전 유적,"Hwangtojeon Site, Sinhyeon-dong, Ulsan",Gyeongsang," Sinhyeon-dong, Ulsan",Late Mumun,0,0,1,0,0,0,0,1
+K0126,143,울산 인보리 번답들 유적,"Beondapdeul Site, Inbo-ri, Ulsan",Gyeongsang," Inbo-ri, Ulsan",Early Mumun,1,0,1,0,0,0,1,1
+K0127,144,울산 중산동 139유적,"Jungsan-dong 139 Site, Ulsan",Gyeongsang, Ulsan,Late Chulmun,0,0,0,1,0,0,0,1
+K0128,145,울산 중산동 약수 I 유적,"Yaksu I Site, Jungsan-dong, Ulsan",Gyeongsang," Jungsan-dong, Ulsan",Early Mumun,1,1,0,0,0,0,1,0
+K0129,145,울산 중산동 약수 I 유적,"Yaksu I Site, Jungsan-dong, Ulsan",Gyeongsang," Jungsan-dong, Ulsan",Late Mumun,1,1,0,0,0,0,1,0
+K0130,147,진주 대평리 옥방 1 지구 유적,"Locality 1, Okbang Site, Daepyeong-ri, Jinju",Gyeongsang," Okbang Site, Daepyeong-ri, Jinju",Early Mumun,1,0,0,0,0,0,1,0
+K0131,147,진주 대평리 옥방 1 지구 유적,"Locality 1, Okbang Site, Daepyeong-ri, Jinju",Gyeongsang," Okbang Site, Daepyeong-ri, Jinju",Late Mumun,1,1,0,0,0,0,1,0
+K0132,148,진주 대평리 옥방 2 지구 유적,"Locality 2, Okbang Site, Daepyeong-ri, Jinju",Gyeongsang," Okbang Site, Daepyeong-ri, Jinju",Late Mumun,1,1,0,0,0,0,1,0
+K0133,150,진주 대평리 옥방 4 지구 유적,"Locality 4, Okbang Site, Daepyeong-ri, Jinju",Gyeongsang," Okbang Site, Daepyeong-ri, Jinju",Late Mumun,1,1,1,0,0,0,1,1
+K0134,152,진주 대평리 옥방 6 지구 유적,"Locality 6, Okbang Site, Daepyeong-ri, Jinju",Gyeongsang," Okbang Site, Daepyeong-ri, Jinju",Late Mumun,1,0,0,0,0,1,1,1
+K0135,153,진주 대평리 옥방 9 지구 유적,"Locality 9, Okbang Site, Daepyeong-ri, Jinju",Gyeongsang," Okbang Site, Daepyeong-ri, Jinju",Late Mumun,1,1,0,0,0,0,1,0
+K0136,154,진주 상촌리 B지구 유적,"Locality B, Sangchon-ri Site, Jinju",Gyeongsang," Sangchon-ri Site, Jinju",Mumun,1,1,1,0,0,0,1,1
+K0137,154,진주 상촌리 B지구 유적,"Locality B, Sangchon-ri Site, Jinju",Gyeongsang," Sangchon-ri Site, Jinju",Early Mumun,1,0,0,0,0,0,1,0
+K0138,154,진주 상촌리 B지구 유적,"Locality B, Sangchon-ri Site, Jinju",Gyeongsang," Sangchon-ri Site, Jinju",Late Chulmun,1,0,0,0,0,0,1,0
+K0139,154,진주 상촌리 B지구 유적,"Locality B, Sangchon-ri Site, Jinju",Gyeongsang," Sangchon-ri Site, Jinju",Middle Chulmun,1,0,1,1,0,0,1,1
+K0140,155,진주 대평리 어은 1 지구 유적,"Locality 1, Oeun Site, Daepyeong-ri, Jinju",Gyeongsang," Oeun Site, Daepyeong-ri, Jinju",Mumun,1,0,0,0,0,0,1,0
+K0141,155,진주 대평리 어은 1 지구 유적,"Locality 1, Oeun Site, Daepyeong-ri, Jinju",Gyeongsang," Oeun Site, Daepyeong-ri, Jinju",Early Mumun,1,1,0,0,0,0,1,0
+K0142,155,진주 대평리 어은 1 지구 유적,"Locality 1, Oeun Site, Daepyeong-ri, Jinju",Gyeongsang," Oeun Site, Daepyeong-ri, Jinju",Late Mumun,1,1,0,0,0,0,1,0
+K0143,155,진주 대평리 어은 1 지구 유적,"Locality 1, Oeun Site, Daepyeong-ri, Jinju",Gyeongsang," Oeun Site, Daepyeong-ri, Jinju",Late Chulmun,1,0,0,0,0,0,1,0
+K0144,157,진주 평거동 3-1지구 유적,"Locality 3-1, Pyeonggeo-dong Site, Jinju",Gyeongsang," Pyeonggeo-dong Site, Jinju",Early Mumun,1,0,0,0,0,1,1,1
+K0145,157,진주 평거동 3-1지구 유적,"Locality 3-1, Pyeonggeo-dong Site, Jinju",Gyeongsang," Pyeonggeo-dong Site, Jinju",Late Mumun,1,1,1,0,0,1,1,1
+K0146,157,진주 평거동 3-1지구 유적,"Locality 3-1, Pyeonggeo-dong Site, Jinju",Gyeongsang," Pyeonggeo-dong Site, Jinju",Late Chulmun,1,1,1,0,0,1,1,1
+K0147,159,진주 평거동 3-2-2 지구 유적,"Locality 3-2-2, Pyeonggeo-dong Site, Jinju",Gyeongsang," Pyeonggeo-dong Site, Jinju",Mumun,1,0,0,0,0,0,1,0
+K0148,160,진주 평거동 4-1지구 유적,"Locality 4-1, Pyeonggeo-dong Site, Jinju",Gyeongsang," Pyeonggeo-dong Site, Jinju",Early Mumun,1,1,1,0,0,1,1,1
+K0149,160,진주 평거동 4-1지구 유적,"Locality 4-1, Pyeonggeo-dong Site, Jinju",Gyeongsang," Pyeonggeo-dong Site, Jinju",Late Mumun,1,0,0,0,0,1,1,1
+K0150,160,진주 평거동 4-1지구 유적,"Locality 4-1, Pyeonggeo-dong Site, Jinju",Gyeongsang," Pyeonggeo-dong Site, Jinju",Late Chulmun,1,0,1,0,0,1,1,1
+K0151,160,진주 평거동 4-1지구 유적,"Locality 4-1, Pyeonggeo-dong Site, Jinju",Gyeongsang," Pyeonggeo-dong Site, Jinju",Middle Chulmun,1,0,0,0,0,1,1,1
+K0152,161,창녕 비봉리 유적,"Bibong-ri Site, Changnyeong",Gyeongsang, Changnyeong,Early Chulmun,1,0,1,1,0,0,1,1
+K0153,161,창녕 비봉리 유적,"Bibong-ri Site, Changnyeong",Gyeongsang, Changnyeong,Late Chulmun,1,0,0,0,0,0,1,0
+K0154,163,포항 원동 유적,"Won-dong Site, Pohang",Gyeongsang, Pohang,Early Mumun,0,0,0,0,0,0,0,0
+K0155,164,합천 봉계리 유적,"Bonggye-ri Site, Hapcheon",Gyeongsang, Hapcheon,Early Mumun,0,1,0,0,0,0,1,0
+K0156,164,합천 봉계리 유적,"Bonggye-ri Site, Hapcheon",Gyeongsang, Hapcheon,Late Chulmun,1,0,0,0,0,0,1,0
+K0157,164,합천 봉계리 유적,"Bonggye-ri Site, Hapcheon",Gyeongsang, Hapcheon,Middle Chulmun,1,0,1,1,0,0,1,1
