@@ -48,18 +48,90 @@ c14data$cat2[which(c14data$cat=='hazelnut')] = "Hazelnut"
 c14data$cat2 = factor(c14data$cat2,levels=c('Oat + Wheat + Barley','Hazelnut'),ordered=T)
 
 # Calibrate and Plot StackSPD ----
-caldates  <-  calibrate(c14data$CRA,c14data$Error,normalised=FALSE)
+caldates  <-  calibrate(c14data$CRA,c14data$Error,normalised=TRUE)
 BCADtoBP(-6000) #7949
 BCADtoBP(-1000) #2949
 nrow(c14data) #1718 --> total number of dates
 length(which.CalDates(caldates,BP < 7949 & BP > 2949, p=0.5)) #effective number of dates between 6000 and 1000 BC: 830 --> effective number of dates
 
 stspd  <- stackspd(caldates,timeRange=BCADtoBP(c(-6000,-1000)),group = c14data$cat2)
-par(mfrow=c(1,2))
-plot(stspd,type='proportion',calendar='BCAD',runm=50,ylab='Proportion SPD',col.fill=c('indianred','steelblue'),main='Relative Proportion of Wild Nuts vs Crops',legend=F)
-plot(stspd,legend=T,col.fill=c('indianred','steelblue'),col.line=NULL,legend.arg=list(x='topright',bty='n'),runm=50,calendar='BCAD')
+# Permutation Test
+test  <- permTest(x=caldates,timeRange=BCADtoBP(c(-6000,-1000)),marks=c14data$cat2,nsim=1000,runm=100)
+# Extract regions of positive and negative deviations 
+obs <- test$observed[[1]]
+envelope <-test$envelope[[1]]
+positive <- which(obs[,2]>envelope[,2])
+negative <- which(obs[,2]<envelope[,1])
 
-# Add lines with significant deviations from NULL ----
-test  <- permTest(x=caldates,timeRange=BCADtoBP(c(-6000,-1000)),marks=c14data$cat2,nsim=1000)
+
+# Plot ----
+pdf(width=9,height=5,file=here('figures','spd_gb.pdf'))
+par(mfrow=c(1,2))
+plot(stspd,type='proportion',calendar='BCAD',runm=100,ylab='Proportion SPD',col.fill=c('indianred','steelblue'),main='Relative Proportion of Wild Nuts vs Crops',legend=F,axes=F)
+
+# Plot Intervals with significant positive an negative deviations of Hazelnut
+i=1
+while (i < length(obs[,1]))
+{	
+	if(!is.na(obs[i,2]))
+	{
+		if(obs[i,2]>envelope[i,2])
+		{
+			ss=obs[i,1]
+			while(obs[i,2]>envelope[i,2])
+			{
+				ee=obs[i,1]
+				i=i+1
+				if (i>length(obs[,1]))
+				{
+					i = length(obs[,1])
+					ee=obs[i,1]
+					break()
+				}
+			}
+			if (ss!=ee)	
+			{
+				arrows(x0=BPtoBCAD(ss),x1=BPtoBCAD(ee),y0=0.9,y1=0.9,length=0.02,angle = 90,code = 3,lwd=2)
+				text(x=BPtoBCAD(median(c(ss,ee))),y=0.93,label='b',cex=0.8)
+			}
+		}
+	}
+	i = i+1
+}
+
+i=1
+while (i < length(obs[,1]))
+{
+	if(!is.na(obs[i,2]))
+	{
+		if(obs[i,2]<envelope[i,1])
+		{
+			ss=obs[i,1]
+			while(obs[i,2]<envelope[i,1])
+			{
+				ee=obs[i,1]
+				i=i+1
+				if (i>length(obs[,1]))
+				{
+					i = length(obs[,1])
+					ee=obs[i,1]
+					break()
+				}
+			}
+			if (ss!=ee & abs(ss-ee)>50)
+			{
+
+				arrows(x0=BPtoBCAD(ss),x1=BPtoBCAD(ee),y0=0.9,y1=0.9,length=0.02,angle = 90,code = 3,lwd=2)
+				text(x=BPtoBCAD(median(c(ss,ee))),y=0.93,label='a',cex=0.8)
+			}
+		}
+	}
+	i = i+1
+}
+
+
+plot(stspd,legend=T,col.fill=c('indianred','steelblue'),col.line=NULL,legend.arg=list(x='topleft',bty='n',cex=0.9),runm=100,calendar='BCAD')
+
+dev.off()
 
 
