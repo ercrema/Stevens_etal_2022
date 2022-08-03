@@ -22,7 +22,7 @@ i   <- st_contains(win,sites,sparse = F,prepared = F)
 c14data  <- c14data[i,]
 
 
-# Subset dates for Oats, Wheat, Barley, and Hazelnuts ----
+# Subset dates for Wheat, Barley, and Hazelnuts ----
 c14data$cat  <- NA
 toMatchMat <- c("nutshell","grain","fruit","seed")
 check1 <- grepl(paste(toMatchMat,collapse="|"), c14data$Material)
@@ -37,15 +37,15 @@ toExclude <- c("Hordeum/Triticum","Triticum/Hordeum vulgare ", "Hordeum vulgare/
 check <- check & !c14data$Species %in% toExclude
 c14data$cat[which(check & !c14data$Species %in% toExclude)] = 'barley'
 
-check <- grepl("Avena",c14data$Species) & check1
-toExclude <- c("Avena/Triticum")
-check <- check & !c14data$Species %in% toExclude
-c14data$cat[which(check & !c14data$Species %in% toExclude)] = 'oats'
+# check <- grepl("Avena",c14data$Species) & check1
+# toExclude <- c("Avena/Triticum")
+# check <- check & !c14data$Species %in% toExclude
+# c14data$cat[which(check & !c14data$Species %in% toExclude)] = 'oats'
 
 c14data  <- subset(c14data,!is.na(cat))
-c14data$cat2  <- "Oat + Wheat + Barley"
+c14data$cat2  <- "Wheat + Barley"
 c14data$cat2[which(c14data$cat=='hazelnut')] = "Hazelnut"
-c14data$cat2 = factor(c14data$cat2,levels=c('Oat + Wheat + Barley','Hazelnut'),ordered=T)
+c14data$cat2 = factor(c14data$cat2,levels=c('Wheat + Barley','Hazelnut'),ordered=T)
 
 # Calibrate and Plot StackSPD ----
 caldates  <-  calibrate(c14data$CRA,c14data$Error,normalised=TRUE)
