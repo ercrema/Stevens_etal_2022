@@ -97,7 +97,7 @@ for (i in 1:nrow(korea.freq))
 
 
 
-# Plot Results (Japan) ----
+# Plot Frequencies/HPDIs (Japan) ----
 
 pdf(width=10,height=7,file=here('figures','japan_abot.pdf'))
 par(mar=c(3,4,3,1))
@@ -124,7 +124,7 @@ text(x=2,y=2.05,labels = 'Wild Nuts',cex=1.3)
 dev.off()
 
 
-# Plot Results (Korea) ----
+# Plot Frequencies/HPDIs (Korea) ----
 pdf(width=6,height=7,file=here('figures','korea_abot.pdf'))
 par(mar=c(3,4,3,1))
 plot(NULL,xlim=c(0.75,4.25),ylim=c(0,2.1),xlab='',ylab='Proportion Sites',axes=FALSE,main='')
@@ -145,3 +145,66 @@ axis(side=3,at=korea.freq$index,labels = paste0('n=',korea.freq$total),cex=1,tic
 text(x=1 ,y=0.95,labels = 'Rice + Millets',cex=1)
 text(x=1,y=2.05,labels = 'Wild Nuts',cex=1)
 dev.off()
+
+# Assess relative contribution of wild plants in sites with domesticates ----
+japan_rm  <- subset(japan,rice_and_millets==1)
+korea_rm  <- subset(korea,rice_and_millets==1)
+
+japan.freq_rm = expand.grid(japan.periods,japan.regions,stringsAsFactors = FALSE)
+colnames(japan.freq_rm) = c('Period','Region')
+
+japan.freq_rm$wildnuts = NA
+japan.freq_rm$wildnuts.lo90 = NA
+japan.freq_rm$wildnuts.hi90 = NA
+japan.freq_rm$wildnuts.lo50 = NA
+japan.freq_rm$wildnuts.hi50 = NA
+japan.freq_rm$wildnuts.obsProp = NA
+
+for (i in 1:nrow(japan.freq_rm))
+{
+
+	tmp = subset(japan_rm,Period==japan.freq_rm$Period[i] & MacroRegion==japan.freq_rm$Region[i])
+	japan.freq_rm$total[i] = nrow(tmp)
+	japan.freq_rm$wildnuts[i]=sum(tmp$wild_nuts)
+	japan.freq_rm$wildnuts.obsProp[i] = japan.freq_rm$wildnuts[i]/japan.freq_rm$total[i]
+	japan.freq_rm$wildnuts.lo90[i] = qbeta(0.05,japan.freq_rm$wildnuts[i]+1,japan.freq_rm$total[i]-japan.freq_rm$wildnuts[i]+1)
+	japan.freq_rm$wildnuts.hi90[i] = qbeta(0.95,japan.freq_rm$wildnuts[i]+1,japan.freq_rm$total[i]-japan.freq_rm$wildnuts[i]+1)
+	japan.freq_rm$wildnuts.lo50[i] = qbeta(0.25,japan.freq_rm$wildnuts[i]+1,japan.freq_rm$total[i]-japan.freq_rm$wildnuts[i]+1)
+	japan.freq_rm$wildnuts.hi50[i] = qbeta(0.75,japan.freq_rm$wildnuts[i]+1,japan.freq_rm$total[i]-japan.freq_rm$wildnuts[i]+1)
+}
+
+
+korea.freq_rm = data.frame(Period=korea.periods)
+
+korea.freq_rm$wildnuts = NA
+korea.freq_rm$wildnuts.lo90 = NA
+korea.freq_rm$wildnuts.hi90 = NA
+korea.freq_rm$wildnuts.lo50 = NA
+korea.freq_rm$wildnuts.hi50 = NA
+korea.freq_rm$wildnuts.obsProp = NA
+korea.freq_rm$total = NA
+
+
+for (i in 1:nrow(korea.freq_rm))
+{
+
+	tmp = subset(korea_rm,Period2==korea.freq_rm$Period[i])
+	korea.freq_rm$total[i] = nrow(tmp)
+	korea.freq_rm$wildnuts[i]=sum(tmp$wild_nuts)
+	korea.freq_rm$ricemillets[i]=sum(tmp$rice_and_millets)
+	korea.freq_rm$wildnuts.obsProp[i] = korea.freq_rm$wildnuts[i]/korea.freq_rm$total[i]
+	korea.freq_rm$wildnuts.lo90[i] = qbeta(0.05,korea.freq_rm$wildnuts[i]+1,korea.freq_rm$total[i]-korea.freq_rm$wildnuts[i]+1)
+	korea.freq_rm$wildnuts.hi90[i] = qbeta(0.95,korea.freq_rm$wildnuts[i]+1,korea.freq_rm$total[i]-korea.freq_rm$wildnuts[i]+1)
+	korea.freq_rm$wildnuts.lo50[i] = qbeta(0.25,korea.freq_rm$wildnuts[i]+1,korea.freq_rm$total[i]-korea.freq_rm$wildnuts[i]+1)
+	korea.freq_rm$wildnuts.hi50[i] = qbeta(0.75,korea.freq_rm$wildnuts[i]+1,korea.freq_rm$total[i]-korea.freq_rm$wildnuts[i]+1)
+	korea.freq_rm$ricemillets.obsProp[i] = korea.freq_rm$ricemillets[i]/korea.freq_rm$total[i]
+	korea.freq_rm$ricemillets.lo90[i] = qbeta(0.05,korea.freq_rm$ricemillets[i]+1,korea.freq_rm$total[i]-korea.freq_rm$ricemillets[i]+1)
+	korea.freq_rm$ricemillets.hi90[i] = qbeta(0.95,korea.freq_rm$ricemillets[i]+1,korea.freq_rm$total[i]-korea.freq_rm$ricemillets[i]+1)
+	korea.freq_rm$ricemillets.lo50[i] = qbeta(0.25,korea.freq_rm$ricemillets[i]+1,korea.freq_rm$total[i]-korea.freq_rm$ricemillets[i]+1)
+	korea.freq_rm$ricemillets.hi50[i] = qbeta(0.75,korea.freq_rm$ricemillets[i]+1,korea.freq_rm$total[i]-korea.freq_rm$ricemillets[i]+1)
+}
+
+
+
+# Plot Korea and Japan proportion wild in sites with rice/millets ----
+
