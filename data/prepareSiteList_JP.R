@@ -8,17 +8,15 @@ library(sf)
 library(dplyr)
 
 # Read and Aggregate Data ----
-jomon  <- read.csv(here('data','jomon_abot.csv'),header = FALSE)
 yayoi  <- read.csv(here('data','yayoi_abot.csv'),header = FALSE)
 kofun  <- read.csv(here('data','kofun_abot.csv'),header = FALSE)
 kodai  <- read.csv(here('data','kodai_abot.csv'),header = FALSE)
 
-jomon$PeriodClassification  <- c("Jomon")
 yayoi$PeriodClassification  <- c("Yayoi")
 kofun$PeriodClassification  <- c("Kofun")
 kodai$PeriodClassification  <- c("Kodai")
 
-complete  <- rbind.data.frame(jomon,yayoi,kofun,kodai)
+complete  <- rbind.data.frame(yayoi,kofun,kodai)
 
 # Setup Header ----
 colnames(complete) = c('ID','Taxon','APGNameJP','APGNameLatin','EnglerJP','EnglerLatin','Part','SiteName','Prefecture','SiteAdresss','Latitude','Longitude','Period','Creator','Year','Title','Page','Notes','Notes2','VolumeTitle','PublishedBy','PeriodClassification')
@@ -66,26 +64,9 @@ for (i in  1:length(dupNames))
 dups = cbind.data.frame(SiteName=dupNames,MaxDist=dupNames.maxDist)
 dups2check = subset(dups,MaxDist>5) # manually check sets with a distance over 5km:
 
-
-
 dups2check[1,]
 subset(complete,SiteName=="布留遺跡"&Translation=='Nara') |> select(SiteName,Latitude,Longitude,SiteAdresss,VolumeTitle) |> unique()
 # Same Site
-
-dups2check[2,]
-subset(complete,SiteName=="新田遺跡"&Translation=='Aomori') |> select(SiteName,SiteID,Latitude,Longitude,SiteAdresss,VolumeTitle) |> unique()
-# Two different sites (different cities) - assign new SiteID
-index = which(complete$SiteName=='新田遺跡'& complete$Translation=='Aomori'&complete$SiteAdresss=='八戸市大字是川字新田8-6')
-complete$SiteID[index]='S1499'
-
-dups2check[3,]
-subset(complete,SiteName=="本郷大田下遺跡"&Translation=='Nara') |> select(SiteName,Latitude,Longitude,SiteAdresss,VolumeTitle) |> unique()
-# Same City -- SiteID is ok
-
-dups2check[4,]
-subset(complete,SiteName=="水天向遺跡"&Translation=='Kagoshima') |> select(SiteName,Latitude,Longitude,SiteAdresss,VolumeTitle) |> unique()
-# Same City -- SiteID is ok
-
 
 # Create Site List and Extract Presence/Absence ----
 sitelist = select(complete,SiteID,SiteName,Prefecture=Translation,Region=Region,Period=PeriodClassification) |> unique()
