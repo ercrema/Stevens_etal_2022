@@ -1,5 +1,5 @@
 #### This scripts prepare the data downleaded from the "Database of Plant Macrofossils from Archaeological Sites in Japan" (URL:https://www.rekihaku.ac.jp/up-cgi/login.pl?p=param/issi/db_param).
-#### Queries were carried out on the 19th of July 2022 by setting "時代分類" (Period) to 'B: 縄文時代', 'C:弥生時代','D:古墳時代', and 'E:古代'.
+#### Queries were carried out on the 19th of July 2022 by setting "時代分類" (Period) to 'C:弥生時代','D:古墳時代', and 'E:古代'.
 #### Downloaded CSV files were originally encoded in Shift-JIS and re-encoded in UTF-8
 
 # Load Library ----
