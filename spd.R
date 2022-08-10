@@ -53,6 +53,11 @@ BCADtoBP(-6000) #7949
 BCADtoBP(-1000) #2949
 nrow(c14data) #1718 --> total number of dates
 length(which.CalDates(caldates,BP < 7949 & BP > 2949, p=0.5)) #effective number of dates between 6000 and 1000 BC: 830 --> effective number of dates
+ii  <- which.CalDates(caldates,BP <7949 & BP >2949, p=0.5)
+table(c14data[ii,]$cat2)
+
+# Wheat + Barley       Hazelnut                                                                                                              
+#            285            542
 
 stspd  <- stackspd(caldates,timeRange=BCADtoBP(c(-6000,-1000)),group = c14data$cat2)
 # Permutation Test

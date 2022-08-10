@@ -38,8 +38,8 @@ for (i in 1:nrow(japan.freq))
 	tmp = subset(japan,Period==japan.freq$Period[i] & MacroRegion==japan.freq$Region[i])
 	japan.freq$total[i] = nrow(tmp)
 	japan.freq$wildnuts[i]=sum(tmp$wild_nuts)
-	japan.freq$beta1[i] = 1 + japan.freq$wildnuts[i]
-	japan.freq$beta2[i] = 1 + japan.freq$total[i] - japan.freq$wildnuts[i]
+	japan.freq$beta1[i] = 0.5 + japan.freq$wildnuts[i]
+	japan.freq$beta2[i] = 0.5 + japan.freq$total[i] - japan.freq$wildnuts[i]
 }
 
 
@@ -58,8 +58,8 @@ for (i in 1:nrow(korea.freq))
 	tmp = subset(korea,Period2==korea.freq$Period[i])
 	korea.freq$total[i] = nrow(tmp)
 	korea.freq$wildnuts[i]=sum(tmp$wild_nuts)
-	korea.freq$beta1[i] = 1 + korea.freq$wildnuts[i]
-	korea.freq$beta2[i] = 1 + korea.freq$total[i] - korea.freq$wildnuts[i]
+	korea.freq$beta1[i] = 0.5 + korea.freq$wildnuts[i]
+	korea.freq$beta2[i] = 0.5 + korea.freq$total[i] - korea.freq$wildnuts[i]
 }
 
 

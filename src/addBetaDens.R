@@ -6,7 +6,7 @@
 # hpd ... quantile percentage range for region to be color filled
 
 
-addBetaDens  <- function(x,beta1,beta2,w,col,hpd=0.9)
+addBetaDens  <- function(x,beta1,beta2,w,col,hpd=0.9,betaprior=0.5)
 {
 	xx  <- round(seq(0,1,length.out=1000),3)
 	dens  <- dbeta(xx,beta1,beta2)
@@ -26,5 +26,5 @@ addBetaDens  <- function(x,beta1,beta2,w,col,hpd=0.9)
 	rightVals.hpd = (dens[dhpdi]/(max(dens[dhpdi]))) * (maxRight - x) + x 
 	polygon(c(leftVals.999,rev(rightVals.999)),c(xx[d999i],rev(xx[d999i])),col=NULL,border = 'lightgrey')
 	polygon(c(leftVals.hpd,rev(rightVals.hpd)),c(xx[dhpdi],rev(xx[dhpdi])),col=col,border=col)
-	lines(c(maxLeft,maxRight),rep((beta1-1)/(beta1+beta2-2),2),lwd=2,col=1)
+	lines(c(maxLeft,maxRight),rep((beta1-betaprior)/(beta1+beta2-betaprior*2),2),lwd=2,col=1)
 }
