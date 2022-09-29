@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/518840549.svg)](https://zenodo.org/badge/latestdoi/518840549)
+
 # Data and Scripts for the manuscript "The impotance of wild resources as a reflection of the resilience and changing nature of early agricultural systems in East Asia and Europe"
 
 This repository contains data and scripts required for generating figures 2, 3, and 4 in the following paper:
