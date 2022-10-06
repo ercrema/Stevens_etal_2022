@@ -68,8 +68,8 @@ for (i in 1:nrow(korea.freq))
 
 
 # Plot Frequencies/HPDIs (Japan) ----
-
-pdf(width=8,height=4,file=here('figures','japan_abot.pdf'))
+cairo_ps(width=8,height=4,file=here('figures','japan_abot.eps'))
+# pdf(width=8,height=4,file=here('figures','japan_abot.pdf'))
 par(mar=c(3,4,3,1))
 plot(NULL,xlim=c(0.75,11.25),ylim=c(0,1),xlab='',ylab='Proportion Sites',axes=FALSE,main='')
 japan.freq$index = c(1:3,5:7,9:11)
@@ -92,7 +92,8 @@ dev.off()
 
 
 # Plot Frequencies/HPDIs (Korea) ----
-pdf(width=6,height=4,file=here('figures','korea_abot.pdf'))
+cairo_ps(width=6,height=4,file=here('figures','korea_abot.eps'))
+# pdf(width=6,height=4,file=here('figures','korea_abot.pdf'))
 par(mar=c(3,4,3,1))
 plot(NULL,xlim=c(0.75,3.25),ylim=c(0,1),xlab='',ylab='Proportion Sites',axes=FALSE,main='')
 korea.freq$index = c(1:3)
@@ -103,7 +104,7 @@ for (i in 1:nrow(korea.freq))
 	addBetaDens(x=korea.freq$index[i],beta1=korea.freq$beta1[i],beta2=korea.freq$beta2[i],w=w,col='steelblue')
 }
 
-axis(side=1,at=c(1:4),labels=c('Early \n Chulmun','Middle \n Chulmun','Late \n Chulumun','Mumun'),tick=FALSE,cex=1.2)
+axis(side=1,at=c(1:3),labels=c('Middle \n Chulmun','Late \n Chulmun','Mumun'),tick=FALSE,cex=1.2)
 axis(side=2,at=seq(0,1,length.out=5),labels=seq(0,1,length.out = 5),las=2)
 axis(side=3,at=korea.freq$index,labels = paste0('n=',korea.freq$total),cex=1,tick=FALSE,padj = 1)
 dev.off()

@@ -70,7 +70,8 @@ negative <- which(obs[,2]<envelope[,1])
 
 
 # Plot ----
-pdf(width=9,height=5,file=here('figures','spd_gb.pdf'))
+cairo_ps(width=9,height=5,file=here('figures','spd_gb.eps'))
+# pdf(width=9,height=5,file=here('figures','spd_gb.pdf'))
 par(mfrow=c(1,2))
 plot(stspd,type='proportion',calendar='BCAD',runm=100,ylab='Proportion SPD',col.fill=c('indianred','steelblue'),main='Relative Proportion of Wild Nuts vs Crops',legend=F,axes=F)
 
